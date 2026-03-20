@@ -10,7 +10,7 @@ public class Guessing_Game {
 
         Guessing_Game game = new Guessing_Game();
         game.Insert_Number();
-        game.Generate_Number();
+        game.Generate_Number()  ;
         game.Compare_Numbers();
     }
 
@@ -24,8 +24,8 @@ public class Guessing_Game {
 
     private void Generate_Number() {
 
-        Random random = new Random();
-        random_num = random.nextInt(10) + 1;
+        Random get_number = new Random();
+        random_num = get_number.nextInt(10) + 1;
     }
 
     private void Insert_Number(){

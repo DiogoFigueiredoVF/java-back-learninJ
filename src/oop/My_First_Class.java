@@ -1,7 +1,32 @@
+
+
 package oop;
 
 public class My_First_Class {
 
-    //dwad;
+    private int counter;
+
+    public static void main(String[] args) {
+
+        Main instance = new Main();
+
+        String result = instance.addUser(null, "DiogoVelos");
+        result = instance.addUser(result, "ZeMaria");
+        instance.writetext(result);
+        System.out.println("Counter: " + instance.counter);
+    }
+
+    public void writetext(String names) {
+        System.out.println("Hello " + names + "!");
+    }
+
+    public String addUser(String existingName, String newName) {
+        counter ++;
+        if (existingName == null) {
+            return newName;
+        }
+
+        return existingName + " " + newName;
+    }
 
 }

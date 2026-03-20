@@ -8,7 +8,7 @@ public class My_First_Class {
 
     public static void main(String[] args) {
 
-        Main instance = new Main();
+        My_First_Class instance = new My_First_Class();
 
         String result = instance.addUser(null, "DiogoVelos");
         result = instance.addUser(result, "ZeMaria");
